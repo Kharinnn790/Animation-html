@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#6c757d, #f5c6cb);
+    font-family: Arial, sans-serif;
+    animation: backgroundAnimation 5s infinite alternate;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background: linear-gradient(to top, #ffa6ae, #ffff);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.error-code {
+    font-size: 5rem;
+    text-align: center;
+    color: #721c24;
+    animation: pulse 1.5s infinite;
+}
+
+.error-message {
+    font-size: 2rem;
+    color: #721c24;
+}
+
+.error-description {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.home-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #c82333;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-link:hover {
+    background-color: #bd2130;
+}
+
+/*Добавление google шрифтов*/
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.raleway-uniquifier {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+  
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #f8d7da;
+    }
+    100% {
+        background-color: #ffaeb6;
+    }
+}

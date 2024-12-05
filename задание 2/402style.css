@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8d7da;
+    color: #721c24;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.my-element {
+    background-image: url('5741824.png');
+    background-size: cover; /* Заполняет элемент изображением */
+}        
+
+h1 {
+    font-size: 48px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+p {
+    font-size: 24px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+img {
+    max-width: 300px;
+    margin-top: 20px;
+    animation: fadeOut 3s ease-in;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

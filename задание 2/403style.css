@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to left, rgb(0, 26, 51), rgb(4, 238, 255));
+    color: #000000;
+    text-align: center;
+}       
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 200;
+    font-style: normal;
+}
+  
+.animated {
+    /*анимация из after effects*/
+    animation: shake 5s infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: translate(0); }
+    50% { transform: translate(-3500px, 0); }
+    100% { transform: translate(3500px, 0); }
+}
+
+h1{
+    font-size: 98px;
+}
+
+p {
+    font-size: 32px;
+}

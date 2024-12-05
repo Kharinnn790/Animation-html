@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+        body {
+            background-color: #ffcccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            animation: backgroundAnimation 5s infinite;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-color: #ffcccc; }
+            50% { background-color: #ff6666; }
+            100% { background-color: #ffcccc; }
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #900;
+            animation: shake 0.5s infinite;
+        }
+
+        @keyframes shake {
+            0% { transform: translate(1px, 2px) rotate(0deg); }
+            25% { transform: translate(-1px, -3px) rotate(-1deg); }
+            50% { transform: translate(-3px, 0px) rotate(1deg); }
+            75% { transform: translate(2px, 4px) rotate(0deg); }
+            100% { transform: translate(1px, -3px) rotate(-1deg); }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .animation-container {
+            width: 300px;
+            height: 300px;
+            background: url('path_to_your_animation_500.gif') no-repeat center;
+            background-size: contain;
+            animation: pulse 2s infinite;
+        }
+        .neucha-regular {
+            font-family: "Neucha", cursive;
+            font-weight: 400;
+            font-style: normal;
+        } 
+        .geologica-uniquifier{
+            font-family: "Geologica", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }         
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        p {
+            animation: fadeIn 1s ease-in-out;
+        }
