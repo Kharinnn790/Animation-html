@@ -15,7 +15,6 @@ body {
 }
       
 .animated {
-    /* Здесь можно вставить CSS-анимацию для анимации After Effects */
     animation: pulse 1s infinite;
 }
 
