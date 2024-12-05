@@ -10,7 +10,7 @@ body {
 }
 .my-element {
     background-image: url('5741824.png');
-    background-size: cover; /* Заполняет элемент изображением */
+    background-size: cover; 
 }        
 
 h1 {
