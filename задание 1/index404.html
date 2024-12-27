@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 ERROR</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        #lottie {
+            width: 100%; /* задайте ширину */
+            height: 500px; /* задайте высоту */
+        }       
+        body{
+            background: linear-gradient(to right, #ae00ff, #6200ff);
+        }
+        h1, h2, p{
+            color:aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Geologica", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+        .popup-text {
+            opacity: 0; /* Начальная прозрачность */
+            transform: translateY(20px); /* Начальное смещение вниз */
+            transition: opacity 0.5s ease, transform 0.5s ease; /* Параметры анимации */
+        }
+
+        .popup-text.visible {
+            opacity: 1; /* Полная непрозрачность */
+            transform: translateY(0); /* Возврат к исходному положению */
+        }
+        .popup-text1 {
+            opacity: 0; /* Начальная прозрачность */
+            transform: translateY(20px); /* Начальное смещение вниз */
+            transition: opacity 1s ease, transform 1s ease; /* Параметры анимации */
+        }
+
+        .popup-text1.visible {
+            opacity: 1; /* Полная непрозрачность */
+            transform: translateY(0); /* Возврат к исходному положению */
+        }
+        .popup-text2 {
+            opacity: 0; /* Начальная прозрачность */
+            transform: translateY(20px); /* Начальное смещение вниз */
+            transition: opacity 1s ease, transform 1s ease; /* Параметры анимации */
+        }
+
+        .popup-text2.visible {
+            opacity: 1; /* Полная непрозрачность */
+            transform: translateY(0); /* Возврат к исходному положению */
+        }
+    </style>
+</head>
+<body>
+    <div id="lottie">
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <dotlottie-player src="https://lottie.host/19f8a994-3034-462b-a563-e6ad140ac595/blkoTeOevh.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+    </div>
+    <h1 class="popup-text" id="text">
+        Ошибка 404!
+    </h1>
+    <h2 class="popup-text1" id="text1">
+        Не удается установить соединение с сервером.
+    </h2>
+    <p class="popup-text2" id="text2">
+        Попытайтесь перезагрузить провайдеры и отключить ненужные модемы и повторите попытку.
+    </p>
+    <script>
+        // Функция для добавления класса "visible" к тексту
+        function showText() {
+            const textElement = document.getElementById('text');
+            const textElement1 = document.getElementById('text1');
+            const textElement2 = document.getElementById('text2');
+            textElement.classList.add('visible');
+            textElement1.classList.add('visible');
+            textElement2.classList.add('visible');
+        }
+        // Задержка перед показом текста (например, 1 секунда)
+        setTimeout(showText, 500);
+    </script>
+</body> 
+</html>
